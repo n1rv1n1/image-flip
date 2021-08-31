@@ -5,7 +5,7 @@
  */
 export function imageFlip(image: number[][]): number[][] {
   return image.map(row => {
-      const lastRowItemIndex = row.length - 1;
-      return row.map((_rowItem, rowItemIndex) => row[lastRowItemIndex - rowItemIndex] === 0 ? 1 : 0);
+    const lastRowItemIndex = row.length - 1;
+    return row.map((_rowItem, rowItemIndex) => row[lastRowItemIndex - rowItemIndex] === 0 ? 1 : 0);
   });
 };
